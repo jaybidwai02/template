@@ -118,4 +118,42 @@ a {
         font-size: 2em;
         line-height: 1em; }
 
+/* biodata start */
+.biodataWraper {
+  background-color: #fafafa;
+  width: 100%; }
+
+.biodata {
+  width: 960px;
+  margin: 0 auto;
+  padding: 70px 0; }
+  .biodata .objectives, .biodata .me, .biodata .myInfo {
+    width: 30%; }
+  .biodata .me {
+    margin: 0 5%; }
+  .biodata .objectives h2, .biodata .myInfo h2 {
+    font-size: 1.85714em;
+    line-height: 1em; }
+  .biodata .objectives p, .biodata .myInfo p {
+    color: #727272;
+    font-size: 1.07143em;
+    line-height: 1.8em;
+    margin-top: 20px; }
+  .biodata .objectives .pInfo, .biodata .myInfo .pInfo {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #cccccc;
+    margin-top: 0; }
+    .biodata .objectives .pInfo.first, .biodata .myInfo .pInfo.first {
+      margin-top: 20px;
+      padding: 0 0 10px 0; }
+    .biodata .objectives .pInfo span, .biodata .myInfo .pInfo span {
+      display: inline-block;
+      width: 70%;
+      text-align: left; }
+      .biodata .objectives .pInfo span.label, .biodata .myInfo .pInfo span.label {
+        width: 20%;
+        text-align: right;
+        margin-right: 8%; }
+
 /*# sourceMappingURL=main.css.map */

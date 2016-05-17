@@ -143,3 +143,53 @@ a{
 		}
 	}
 }
+
+
+/* biodata start */
+.biodataWraper{
+	background-color: #fafafa;
+	width: 100%;
+}
+.biodata{
+	width: 960px;
+	margin: 0 auto;
+	padding: 70px 0; 
+	.objectives,.me,.myInfo{
+		width: 30%;
+	}
+	.me{
+		margin: 0 5%; 
+	}
+	.objectives,.myInfo{
+		h2{
+			font-size: 26px/14px*1em;
+			line-height: 1em; 
+		}
+		p{
+			color: #727272;
+			font-size: 15px/14px*1em;
+			line-height: 1.8em;  
+			margin-top: 20px;
+		}
+		.pInfo{
+			width: 100%;
+			padding: 10px 0;
+			border-bottom: 1px solid #cccccc; 
+			margin-top: 0; 
+			&.first{
+				margin-top: 20px;
+				padding:  0 0 10px 0;
+			}
+			span{
+				display: inline-block;
+				width: 70%;
+				text-align: left;
+				&.label{
+					width: 20%;
+					text-align: right;
+					margin-right: 8%;
+				}
+			}
+		}
+	}
+}
