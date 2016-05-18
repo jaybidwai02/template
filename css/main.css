@@ -62,12 +62,12 @@ a {
 
 #header {
   width: 960px;
-  height: 50px;
+  height: 70px;
   background-color: #FFF;
   margin: 0 auto; }
   #header ul {
     display: inline-block;
-    margin-top: 18px; }
+    margin-top: 26px; }
     #header ul li {
       float: left;
       margin-right: 25px;
@@ -76,21 +76,79 @@ a {
       #header ul li.last {
         margin-right: 0; }
 
+.bgOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10; }
+
+.bgImg {
+  width: 100%;
+  height: 100%; }
+
+.album {
+  margin-top: 70px; }
+  .album li {
+    float: left; }
+  .album .holder {
+    width: 300px;
+    background-color: #FFF;
+    margin-right: 50px;
+    position: relative; }
+    .album .holder .subHeader {
+      padding: 15px;
+      font-size: 1.14286em;
+      line-height: 1em;
+      color: #727272; }
+    .album .holder .logoImg {
+      width: 100%; }
+    .album .holder .subFooter {
+      padding: 10px 10px; }
+      .album .holder .subFooter span {
+        display: block; }
+      .album .holder .subFooter .name {
+        font-size: 1.28571em;
+        line-height: 1.5em; }
+      .album .holder .subFooter .period {
+        font-size: 1em;
+        line-height: 1.5em;
+        color: #727272; }
+    .album .holder .seeMore {
+      position: absolute;
+      bottom: 30px;
+      right: 20px;
+      font-size: 2.14286em;
+      display: block;
+      cursor: pointer; }
+      .album .holder .seeMore span {
+        display: block;
+        line-height: 1em;
+        margin-top: -24px; }
+    .album .holder .onHover {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      color: #000;
+      background-color: #FFF;
+      display: none; }
+      .album .holder .onHover .subFooter {
+        border-bottom: 1px solid #e0e0e0; }
+      .album .holder .onHover .desc {
+        color: #727272;
+        padding: 10px;
+        font-size: 1em;
+        margin-top: 15px; }
+  .album .holder:hover .onHover {
+    display: block; }
+
 /* content start */
 .bgContainer {
-  height: 350px;
+  height: 500px;
   position: relative; }
-  .bgContainer .bgImg {
-    width: 100%;
-    height: 100%; }
-  .bgContainer .bgOverlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 10; }
   .bgContainer .innerWrapper {
     width: 960px;
     height: 100%;
@@ -99,22 +157,25 @@ a {
     left: 0;
     right: 0;
     margin: 0 auto;
-    z-index: 20; }
+    z-index: 20;
+    display: table; }
     .bgContainer .innerWrapper .introText {
       text-align: center;
       margin-top: 60px;
-      color: #FFF; }
+      color: #FFF;
+      display: table-cell;
+      vertical-align: middle; }
       .bgContainer .innerWrapper .introText h1 {
-        font-size: 4em;
+        font-size: 5.14286em;
         line-height: 1em; }
       .bgContainer .innerWrapper .introText p {
         font-size: 2em;
         line-height: 1em;
         font-weight: 300;
         font-style: normal;
-        margin-top: 18px; }
+        margin-top: 25px; }
       .bgContainer .innerWrapper .introText .btn {
-        margin-top: 30px;
+        margin-top: 40px;
         font-size: 2em;
         line-height: 1em; }
 
@@ -130,7 +191,13 @@ a {
   .biodata .objectives, .biodata .me, .biodata .myInfo {
     width: 30%; }
   .biodata .me {
-    margin: 0 5%; }
+    margin: 0 5%;
+    height: 300px;
+    padding: 10px;
+    background-color: #FFF; }
+    .biodata .me .myPassport {
+      width: 100%;
+      height: 100%; }
   .biodata .objectives h2, .biodata .myInfo h2 {
     font-size: 1.85714em;
     line-height: 1em; }
@@ -155,5 +222,40 @@ a {
         width: 20%;
         text-align: right;
         margin-right: 8%; }
+
+/* experience */
+.experience, .education {
+  width: 100%;
+  padding: 60px 0; }
+  .experience .workExp, .experience .college, .education .workExp, .education .college {
+    width: 960px;
+    margin: 0 auto; }
+    .experience .workExp h3, .experience .college h3, .education .workExp h3, .education .college h3 {
+      font-size: 2.28571em;
+      line-height: 1em;
+      color: #FFF; }
+    .experience .workExp .desc, .experience .college .desc, .education .workExp .desc, .education .college .desc {
+      font-size: 1.28571em;
+      line-height: 1.8em;
+      color: #FFF;
+      margin-top: 30px; }
+
+/* skill start */
+.skill.bgContainerSkill {
+  width: 100%;
+  height: 500px;
+  display: table;
+  position: relative;
+  z-index: 10; }
+  .skill.bgContainerSkill .bgOverlay {
+    background-color: rgba(255, 255, 255, 0.5); }
+  .skill.bgContainerSkill .content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 4.42857em;
+    line-height: 1em;
+    color: #FFF;
+    z-index: 30; }
 
 /*# sourceMappingURL=main.css.map */
