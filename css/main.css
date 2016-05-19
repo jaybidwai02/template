@@ -224,26 +224,33 @@ a {
         margin-right: 8%; }
 
 /* experience */
-.experience, .education {
+.experience, .education, .portfolio {
   width: 100%;
   padding: 60px 0; }
-  .experience .workExp, .experience .college, .education .workExp, .education .college {
+  .experience .workExp, .experience .college, .experience .myWork, .education .workExp, .education .college, .education .myWork, .portfolio .workExp, .portfolio .college, .portfolio .myWork {
     width: 960px;
     margin: 0 auto; }
-    .experience .workExp h3, .experience .college h3, .education .workExp h3, .education .college h3 {
+    .experience .workExp h3, .experience .college h3, .experience .myWork h3, .education .workExp h3, .education .college h3, .education .myWork h3, .portfolio .workExp h3, .portfolio .college h3, .portfolio .myWork h3 {
       font-size: 2.28571em;
       line-height: 1em;
       color: #FFF; }
-    .experience .workExp .desc, .experience .college .desc, .education .workExp .desc, .education .college .desc {
+    .experience .workExp .desc, .experience .college .desc, .experience .myWork .desc, .education .workExp .desc, .education .college .desc, .education .myWork .desc, .portfolio .workExp .desc, .portfolio .college .desc, .portfolio .myWork .desc {
       font-size: 1.28571em;
       line-height: 1.8em;
       color: #FFF;
       margin-top: 30px; }
 
+.portfolio {
+  background-color: #fafafa; }
+  .portfolio .myWork h3 {
+    color: #000; }
+  .portfolio .myWork .desc {
+    color: #727272; }
+
 /* skill start */
 .skill.bgContainerSkill {
   width: 100%;
-  height: 500px;
+  height: 600px;
   display: table;
   position: relative;
   z-index: 10; }

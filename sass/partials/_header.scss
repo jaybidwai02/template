@@ -284,11 +284,11 @@ a{
 
 
 /* experience */
-.experience,.education{
+.experience,.education,.portfolio{
 	width: 100%;
 	// height: 350px;
 	padding: 60px 0;
-	.workExp,.college{
+	.workExp,.college,.myWork{
 		width: 960px;
 		margin: 0 auto;
 		h3{
@@ -305,13 +305,25 @@ a{
 	}	
 }
 
+.portfolio{
+	background-color: #fafafa;
+	.myWork{
+	h3{
+		color: #000; 
+	}
+	.desc{
+		color: #727272; 
+	}
+}
+}
+
 
 
 /* skill start */
 .skill{
 	&.bgContainerSkill{
 		width: 100%;
-		height: 500px;
+		height: 600px;
 		// background-color: #c3c3c3; 
 		display: table;
 		position: relative;
