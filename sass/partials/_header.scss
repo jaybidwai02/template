@@ -329,7 +329,7 @@ a{
 		position: relative;
 		z-index: 10;
 		.bgOverlay{
-			background-color: rgba(255,255,255, .5); 
+			background-color: rgba(255,255,255, .92); 
 		}
 		.content{
 			display: table-cell;
@@ -340,5 +340,108 @@ a{
 			color: #FFF;
 			z-index: 30;  
 		}
+		.showSkill{
+			position: absolute;
+			bottom: 0;
+			top: 0;
+			right: 0;
+			left: 0;
+			margin: 0 auto;
+			width: 960px;
+			height: 100%;
+			z-index: 300;
+			.desc{
+				width: 33%;
+				margin-right: 7%;
+				float: left;
+				padding: 70px 10px;
+				h3,p{
+					color: #000; 
+				}
+				h3{
+					font-size: 32px/14px*1em;
+					line-height: 1em; 
+					margin-bottom: 30px;
+				}
+				p{
+					font-size: 18px/14px*1em;
+					line-height: 1.6em;
+					color: #727272; 
+				}
+			}
+			.barChart{
+				float: left;
+				width: 60%;
+				margin-top: 70px;
+				.codeSkill{
+					display: block;
+					margin-bottom: 30px;
+				}
+				.skillP{
+					font-size: 15px/14px*1em;
+					line-height: 1em;
+					padding: 17px 10px 17px 0;  
+				}
+				.tech{
+					font-size: 15px/14px*1em;
+					line-height: 1em;
+					padding: 17px 10px 0 17px;  
+				}
+				.skillBar{
+					width: 70%;
+					.indicator{
+						height: 1px;
+						margin-top: 24px; 
+						position: relative; 
+					}
+					.indicator:after{
+						width: 6px;
+						height: 6px;
+						-webkit-border-radius: 50%; 
+						border-radius: 50%; 
+						content: " ";
+						background-color: #00bcd4; 
+						position: absolute;
+						right: -3px;
+						top: -3px;
+					}
+
+
+				}
+				
+				.bar{
+					height: 50px;				
+					display: block;
+				}
+				._10p{
+					width: 10%;
+				}
+				._5p{
+					width: 5%;
+				}
+				._15p{
+					width: 25%;
+				}
+				._30p{
+					width: 30%;
+				}
+				._85p{
+					width: 75%;
+				}
+				._90p{
+					width: 90%;
+					
+				}
+				._95p{
+					width: 95%;
+				}
+				._70p{
+					width: 70%;
+				}
+				._80p{
+					width: 80%;
+				}
+			}
+	}
 	}
 }

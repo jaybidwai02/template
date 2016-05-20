@@ -255,7 +255,7 @@ a {
   position: relative;
   z-index: 10; }
   .skill.bgContainerSkill .bgOverlay {
-    background-color: rgba(255, 255, 255, 0.5); }
+    background-color: rgba(255, 255, 255, 0.92); }
   .skill.bgContainerSkill .content {
     display: table-cell;
     vertical-align: middle;
@@ -264,5 +264,82 @@ a {
     line-height: 1em;
     color: #FFF;
     z-index: 30; }
+  .skill.bgContainerSkill .showSkill {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 960px;
+    height: 100%;
+    z-index: 300; }
+    .skill.bgContainerSkill .showSkill .desc {
+      width: 33%;
+      margin-right: 7%;
+      float: left;
+      padding: 70px 10px; }
+      .skill.bgContainerSkill .showSkill .desc h3, .skill.bgContainerSkill .showSkill .desc p {
+        color: #000; }
+      .skill.bgContainerSkill .showSkill .desc h3 {
+        font-size: 2.28571em;
+        line-height: 1em;
+        margin-bottom: 30px; }
+      .skill.bgContainerSkill .showSkill .desc p {
+        font-size: 1.28571em;
+        line-height: 1.6em;
+        color: #727272; }
+    .skill.bgContainerSkill .showSkill .barChart {
+      float: left;
+      width: 60%;
+      margin-top: 70px; }
+      .skill.bgContainerSkill .showSkill .barChart .codeSkill {
+        display: block;
+        margin-bottom: 30px; }
+      .skill.bgContainerSkill .showSkill .barChart .skillP {
+        font-size: 1.07143em;
+        line-height: 1em;
+        padding: 17px 10px 17px 0; }
+      .skill.bgContainerSkill .showSkill .barChart .tech {
+        font-size: 1.07143em;
+        line-height: 1em;
+        padding: 17px 10px 0 17px; }
+      .skill.bgContainerSkill .showSkill .barChart .skillBar {
+        width: 70%; }
+        .skill.bgContainerSkill .showSkill .barChart .skillBar .indicator {
+          height: 1px;
+          margin-top: 24px;
+          position: relative; }
+        .skill.bgContainerSkill .showSkill .barChart .skillBar .indicator:after {
+          width: 6px;
+          height: 6px;
+          -webkit-border-radius: 50%;
+          border-radius: 50%;
+          content: " ";
+          background-color: #00bcd4;
+          position: absolute;
+          right: -3px;
+          top: -3px; }
+      .skill.bgContainerSkill .showSkill .barChart .bar {
+        height: 50px;
+        display: block; }
+      .skill.bgContainerSkill .showSkill .barChart ._10p {
+        width: 10%; }
+      .skill.bgContainerSkill .showSkill .barChart ._5p {
+        width: 5%; }
+      .skill.bgContainerSkill .showSkill .barChart ._15p {
+        width: 25%; }
+      .skill.bgContainerSkill .showSkill .barChart ._30p {
+        width: 30%; }
+      .skill.bgContainerSkill .showSkill .barChart ._85p {
+        width: 75%; }
+      .skill.bgContainerSkill .showSkill .barChart ._90p {
+        width: 90%; }
+      .skill.bgContainerSkill .showSkill .barChart ._95p {
+        width: 95%; }
+      .skill.bgContainerSkill .showSkill .barChart ._70p {
+        width: 70%; }
+      .skill.bgContainerSkill .showSkill .barChart ._80p {
+        width: 80%; }
 
 /*# sourceMappingURL=main.css.map */
