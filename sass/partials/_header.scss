@@ -284,11 +284,11 @@ a{
 
 
 /* experience */
-.experience,.education,.portfolio{
+.experience,.education,.portfolio,.contactMe{
 	width: 100%;
 	// height: 350px;
 	padding: 60px 0;
-	.workExp,.college,.myWork{
+	.workExp,.college,.myWork,.conInfo{
 		width: 960px;
 		margin: 0 auto;
 		h3{
@@ -445,3 +445,18 @@ a{
 	}
 	}
 }
+
+.contactMe{
+	h3{
+		margin-bottom: 10px;
+	}
+	.address{
+		margin-bottom: 5px;
+	}
+	.emailId{
+		padding-left: 10px;
+		margin-left: 10px;
+		border-left: 1px solid #fff; 
+	}
+}
+

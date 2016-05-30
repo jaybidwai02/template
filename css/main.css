@@ -224,17 +224,17 @@ a {
         margin-right: 8%; }
 
 /* experience */
-.experience, .education, .portfolio {
+.experience, .education, .portfolio, .contactMe {
   width: 100%;
   padding: 60px 0; }
-  .experience .workExp, .experience .college, .experience .myWork, .education .workExp, .education .college, .education .myWork, .portfolio .workExp, .portfolio .college, .portfolio .myWork {
+  .experience .workExp, .experience .college, .experience .myWork, .experience .conInfo, .education .workExp, .education .college, .education .myWork, .education .conInfo, .portfolio .workExp, .portfolio .college, .portfolio .myWork, .portfolio .conInfo, .contactMe .workExp, .contactMe .college, .contactMe .myWork, .contactMe .conInfo {
     width: 960px;
     margin: 0 auto; }
-    .experience .workExp h3, .experience .college h3, .experience .myWork h3, .education .workExp h3, .education .college h3, .education .myWork h3, .portfolio .workExp h3, .portfolio .college h3, .portfolio .myWork h3 {
+    .experience .workExp h3, .experience .college h3, .experience .myWork h3, .experience .conInfo h3, .education .workExp h3, .education .college h3, .education .myWork h3, .education .conInfo h3, .portfolio .workExp h3, .portfolio .college h3, .portfolio .myWork h3, .portfolio .conInfo h3, .contactMe .workExp h3, .contactMe .college h3, .contactMe .myWork h3, .contactMe .conInfo h3 {
       font-size: 2.28571em;
       line-height: 1em;
       color: #FFF; }
-    .experience .workExp .desc, .experience .college .desc, .experience .myWork .desc, .education .workExp .desc, .education .college .desc, .education .myWork .desc, .portfolio .workExp .desc, .portfolio .college .desc, .portfolio .myWork .desc {
+    .experience .workExp .desc, .experience .college .desc, .experience .myWork .desc, .experience .conInfo .desc, .education .workExp .desc, .education .college .desc, .education .myWork .desc, .education .conInfo .desc, .portfolio .workExp .desc, .portfolio .college .desc, .portfolio .myWork .desc, .portfolio .conInfo .desc, .contactMe .workExp .desc, .contactMe .college .desc, .contactMe .myWork .desc, .contactMe .conInfo .desc {
       font-size: 1.28571em;
       line-height: 1.8em;
       color: #FFF;
@@ -341,5 +341,14 @@ a {
         width: 70%; }
       .skill.bgContainerSkill .showSkill .barChart ._80p {
         width: 80%; }
+
+.contactMe h3 {
+  margin-bottom: 10px; }
+.contactMe .address {
+  margin-bottom: 5px; }
+.contactMe .emailId {
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px solid #fff; }
 
 /*# sourceMappingURL=main.css.map */
