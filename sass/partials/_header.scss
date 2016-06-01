@@ -235,8 +235,16 @@ a{
 	width: 960px;
 	margin: 0 auto;
 	padding: 70px 0; 
-	.objectives,.me,.myInfo{
+	.objectives{
 		width: 30%;
+		float: left;
+	}
+	.forTab{
+		width: 70%;
+		float: left;
+	}
+	.me,.myInfo{
+		width: 40%;
 	}
 	.me{
 		margin: 0 5%;
