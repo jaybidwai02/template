@@ -13,6 +13,7 @@
 		var slideInterval 	= option.slideInterval;
 		var runOnLoad 			= option.runOnLoad;
 		var $triggerElement	= $('#'+option.triggerElement);
+		var numberOfSlidesInView = option.numberOfSlidesInView;
 
 		var totalSlides = $slide.length;
 		var slideWidth = $slide.width();
@@ -48,19 +49,27 @@
 				sliderML = sliderML < -slideWidth*counter ? -slideWidth*counter : sliderML; // if slide amount is > slide width reset to slide width
 				//console.log(sliderML);
 				$slider.css('margin-left',sliderML);
+
+				console.log(12);
+				//	var totalSlidesWidth = slideWidth*numberOfSlides;
+				//var penddingSlides = numberOfSlides - counter;
+				//console.log(counter*slideWidth+(numberOfSlidesInView-1)*slideWidth);
 				
 				//condition to check when one element is animated completly
-			//	console.log(moved);
+				
+				//console.log(sliderML +"="+ moved);
 				if(sliderML <= moved){
-					moved += sliderML;
+					moved = sliderML - slideWidth;
 					counter++;
 					//condition to animate FIRST element after LAST element
-					if(counter == numberOfSlides){
+					/*if(counter == (numberOfSlides - numberOfSlidesInView+1)){
 						moved = -slideWidth;
 						counter = 1;
 						$slider.css('margin-left',0);
-					}
-					//clearInterval(slideAnimationControl);
+					}*/
+
+					//stop animation as it receches last element
+					if(counter == (numberOfSlides - numberOfSlidesInView+1)) clearInterval(slideAnimationControl);
 					return; //return after one element is animated completly
 				} 
 
@@ -93,8 +102,10 @@ $("#myCraousel").crousel({
 	timeToSlide:1000,
 	movingSpeed:50,
 	slideInterval:3000,
-	runOnLoad:false,
-	triggerElement:'startIt'
+	runOnLoad:true,
+	triggerElement:'startIt',
+	numberOfSlidesInView:3
+
 });
 
 /*function scrollTo(element, to, duration) {

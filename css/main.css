@@ -395,7 +395,7 @@ a {
     width: 6000px;
     height: 100%; }
     .craousel .slider .slide {
-      width: 500px;
+      width: 200px;
       height: 100%;
       float: left; }
       .craousel .slider .slide img {
@@ -407,7 +407,7 @@ a {
     clear: both; }
 
 .myCraousel {
-  width: 500px;
+  width: 600px;
   height: 200px; }
 
 /*# sourceMappingURL=main.css.map */
